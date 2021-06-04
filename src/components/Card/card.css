@@ -8,7 +8,7 @@
 }
 
 .swiper-pagination {
-  bottom: 0px;
+    bottom: 0px!important;
 }
 
 .swiper-slide {
@@ -29,6 +29,13 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  padding: 0 10px;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .swiper-slide img {
