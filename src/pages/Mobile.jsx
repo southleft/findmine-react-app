@@ -2,12 +2,12 @@ import React from 'react';
 import Layout from '../components/Layout';
 import {ConnectedProductRow} from '../components/Products/ProductRow';
 
-const Mock1 = () => {
+const Mobile = () => {
   return (
-    <Layout>
+    <Layout layout='mobile'>
       <ConnectedProductRow />
     </Layout>
   );
 };
 
-export default Mock1;
+export default Mobile;
