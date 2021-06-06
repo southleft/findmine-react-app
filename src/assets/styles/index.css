@@ -210,7 +210,7 @@
 .slick-dots li button {
   height: 0px!important;
   width: 0px !important;
-  border: 3px solid rgba(170,170,170,1)!important;
+  border: 2px solid rgba(170,170,170,1)!important;
   padding: 4px!important;
   border-radius: 100%!important;
 }
