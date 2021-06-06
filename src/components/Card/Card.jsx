@@ -4,7 +4,7 @@ import './card.css';
 
 const Card = (props) => {
   return (
-    <div className="card-content">
+    <div className="card-content" key={props.sku} id={`card-${props.sku}`}>
       <img src={`/assets/images/${props.image}`} alt={props.title} />
       <div className="card-text">
         <p className="card-title">{props.title}</p>
@@ -17,6 +17,8 @@ const Card = (props) => {
             ''
           )}
         </p>
+        <p className="card-payments">{props.payments}</p>
+        <div className="card-hr"></div>
       </div>
     </div>
   );

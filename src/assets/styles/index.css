@@ -1,0 +1,240 @@
+.product-row {
+  max-width: 1204px;
+}
+
+.row-left,
+.row-right {
+  font-family: Poppins !important;
+  display: block !important;
+  color: black !important;
+  top: -72px !important;
+  background: white!important;
+}
+
+.row-left {
+  left: 15px !important;
+  width: 100px !important;
+  text-align: left !important;
+}
+.row-right {
+  right: 38px !important;
+  width: 70px !important;
+  text-align: right !important;
+}
+
+.row-left:before,
+.row-right:before {
+  position: relative !important;
+  font-family: Poppins !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  line-height: 21px !important;
+  color: black !important;
+}
+.row-left:before {
+  content: '< Previous' !important;
+  text-align: left !important;
+}
+.row-right:before {
+  content: 'Next >' !important;
+  text-align: right !important;
+}
+
+.group-left,
+.group-right {
+  top: 407px !important;
+  transform: none !important;
+}
+
+.group-left {
+  left: 80px !important;
+}
+
+.group-right{
+  right: 78px !important;
+}
+
+.group-left:before, .group-right:before {
+  font-size: 25px !important;
+  line-height: 21px !important;
+  font-family: Poppins !important;
+  font-weight: 700 !important;
+  color: rgba(120, 120, 120, 1) !important;
+}
+
+.group-left:before {
+  content: '<' !important;
+  
+}
+
+.group-right:before {
+  content: '>' !important;
+  
+}
+
+.product-group ul.slick-dots {
+  height: 50px;
+  bottom: 0;
+  position: relative;
+  margin-top: 35px;
+}
+
+.product-group ul.slick-dots:before {
+  position: absolute;
+  top: -15px;
+  margin-left: 9px;
+  content: 'SWAP ITEM';
+  font-family: Poppins;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 13px;
+  line-height: 21px;
+  color: rgba(170, 170, 170, 1);
+}
+
+.get-look--container {
+  max-width: 1204px;
+}
+
+.get-look-border {
+  width: 1100px;
+  height: 2px;
+  background: #ddd;
+  margin-bottom: 45px;
+}
+
+.spring-casual {
+  position: relative;
+  width: 200px;
+  height: 24px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+
+}
+
+.page-top-desktop:after {
+  position: relative !important;
+  content: 'GET THE LOOK' !important;
+  font-family: Poppins !important;
+  font-size: 32px !important;
+  font-weight: bold !important;
+  width: 250px !important;
+  background: white !important;
+  display: block !important;
+  top: 28px !important;
+  margin: 0 auto !important;
+  text-align: center !important;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.card-content img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 192px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.card-text {
+  display: flex;
+  height: 170px;
+  flex-direction: column;
+  padding: 0 45px;
+  justify-content: space-between;
+}
+
+.card-title {
+  font-family: Poppins;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 21px;
+  color: rgba(66, 72, 72, 1);
+}
+
+.card-sku {
+  font-family: Poppins;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 21px;
+  color: rgba(158, 158, 158, 1);
+}
+
+.card-price {
+  font-family: Poppins;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: rgba(52, 60, 77, 1);
+  margin-bottom: 5px;
+}
+
+.card-payments {
+  font-family: Poppins;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 13px;
+  line-height: 21px;
+  color: rgba(170, 170, 170, 1);
+  margin-bottom: 7px;
+  margin-top: 0;
+}
+
+.strikethrough {
+  margin-left: 4px;
+  font-weight: 400;
+  font-size: 13px;
+  text-decoration: line-through;
+}
+
+.card-hr {
+  display: block;
+  width: 80px;
+  margin: 0 auto;
+  border-top: 1.5px solid #9e9e9e;
+}
+
+.slick-dots li button {
+  height: 8px!important;
+  width: 8px !important;
+  border: 3px solid rgba(170,170,170,1)!important;
+  border-radius: 100%!important;
+}
+
+.slick-dots li button:before{
+  content: none!important;
+}
+
+.slick-dots li.slick-active button {
+  background: rgba(170, 170, 170, 1)!important;
+}
+
+/* .slick-dots li button:before {
+  font-size: 38px!important;
+  content: '◦'!important;
+  width: 10px!important;
+  height: 10px!important;
+  text-align: center!important;
+}
+
+.slick-dots li.slick-active button:before {
+  font-size: 14px!important;
+  line-height: 25px!important;
+  content: '•'!important;
+  width: 10px!important;
+  height: 10px!important;
+  text-align: center!important;
+} */

@@ -16,12 +16,21 @@
   max-width: 872px;
   display: block;
 }
-@media only screen and (max-width: 872px) {
+
+.page-bottom-desktop {
+  margin-top: -100px;
+}
+
+.page-bottom-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 767px) {
   .page-top-desktop {
     display: none;
   }
   .page-top-mobile {
-      display: block;
-      width: 872px;
+    display: block;
   }
 }
+
