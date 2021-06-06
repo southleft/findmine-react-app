@@ -4,7 +4,6 @@ import DesktopFooter from '../assets/img/page-bottom.png';
 import MobileHeader from '../assets/img/page-top-mobile.png';
 import MobileFooter from '../assets/img/page-bottom-mobile.png';
 import { Container, Row, Col } from 'react-bootstrap';
-import classNames from 'classnames';
 
 const Layout = (props) => {
   return (
