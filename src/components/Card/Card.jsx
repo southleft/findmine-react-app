@@ -1,8 +1,9 @@
 import React from 'react';
+import classNames from 'classnames';
 
 const Card = (props) => {
   return (
-    <div className="card-content" key={props.sku} id={`card-${props.sku}`}>
+    <div className={`card-content--${props.layout}`} key={props.sku} id={`card-${props.sku}`}>
       <img src={`/assets/images/${props.image}`} alt={props.title} />
       <div className="card-text">
         <p className="card-title">{props.title}</p>

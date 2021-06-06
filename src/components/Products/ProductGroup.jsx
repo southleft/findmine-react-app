@@ -15,11 +15,11 @@ const settings = {
   prevArrow: <GroupLeft />,
 };
 
-const ProductGroup = ({ ...props }) => {
+const ProductGroup = (props) => {
   return (
       <Slider {...settings}>
         {props.products.map((product) => (
-          <Card {...product} />
+          <Card layout={props.layout} {...product} />
         ))}
       </Slider>
   );

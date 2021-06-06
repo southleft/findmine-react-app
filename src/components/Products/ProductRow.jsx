@@ -17,55 +17,55 @@ const settings = {
   nextArrow: <RowRight />,
 };
 
-const ProductRow = ({ ...props }) => {
+const ProductRow = (props) => {
   return (
     <div className="product-row">
       <Slider {...settings}>
         <div className="product-group">
           <Row>
-            <Col md={3}>
-              <ProductGroup products={props.cardigans} />
+            <Col xs={props.layout === 'mobile' ? 6 : 3}>
+              <ProductGroup layout={props.layout} products={props.cardigans} />
             </Col>
-            <Col md={3}>
-              <ProductGroup products={props.blouses} />
+            <Col xs={props.layout === 'mobile' ? 6 : 3}>
+              <ProductGroup layout={props.layout} products={props.blouses} />
             </Col>
-            <Col md={3}>
-              <ProductGroup products={props.shoes} />
+            <Col xs={props.layout === 'mobile' ? 6 : 3}>
+              <ProductGroup layout={props.layout} products={props.shoes} />
             </Col>
-            <Col md={3}>
-              <ProductGroup products={props.clutches} />
-            </Col>
-          </Row>
-        </div>
-        <div className="product-group">
-          <Row>
-            <Col md={3}>
-              <ProductGroup products={props.totes} />
-            </Col>
-            <Col md={3}>
-              <ProductGroup products={props.necklaces} />
-            </Col>
-            <Col md={3}>
-              <ProductGroup products={props.watches} />
-            </Col>
-            <Col md={3}>
-              <ProductGroup products={props.scarves} />
+            <Col xs={props.layout === 'mobile' ? 6 : 3}>
+              <ProductGroup layout={props.layout} products={props.clutches} />
             </Col>
           </Row>
         </div>
         <div className="product-group">
           <Row>
-            <Col md={3}>
-              <ProductGroup products={props.hats} />
+            <Col xs={props.layout === 'mobile' ? 6 : 3}>
+              <ProductGroup layout={props.layout} products={props.totes} />
             </Col>
-            <Col md={3}>
-              <ProductGroup products={props.sunglasses} />
+            <Col xs={props.layout === 'mobile' ? 6 : 3}>
+              <ProductGroup layout={props.layout} products={props.necklaces} />
             </Col>
-            <Col md={3}>
-              <ProductGroup products={props.belts} />
+            <Col xs={props.layout === 'mobile' ? 6 : 3}>
+              <ProductGroup layout={props.layout} products={props.watches} />
             </Col>
-            <Col md={3}>
-              <ProductGroup products={props.beanies} />
+            <Col xs={props.layout === 'mobile' ? 6 : 3}>
+              <ProductGroup layout={props.layout} products={props.scarves} />
+            </Col>
+          </Row>
+        </div>
+        <div className="product-group">
+          <Row>
+            <Col xs={props.layout === 'mobile' ? 6 : 3}>
+              <ProductGroup layout={props.layout} products={props.hats} />
+            </Col>
+            <Col xs={props.layout === 'mobile' ? 6 : 3}>
+              <ProductGroup layout={props.layout} products={props.sunglasses} />
+            </Col>
+            <Col xs={props.layout === 'mobile' ? 6 : 3}>
+              <ProductGroup layout={props.layout} products={props.belts} />
+            </Col>
+            <Col xs={props.layout === 'mobile' ? 6 : 3}>
+              <ProductGroup layout={props.layout} products={props.beanies} />
             </Col>
           </Row>
         </div>

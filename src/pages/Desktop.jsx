@@ -5,7 +5,7 @@ import {ConnectedProductRow} from '../components/Products/ProductRow';
 const Desktop = () => {
   return (
     <Layout layout='desktop'>
-      <ConnectedProductRow />
+      <ConnectedProductRow layout='desktop' />
     </Layout>
   );
 };

@@ -1,24 +1,37 @@
 import React from 'react';
-import Header from '../assets/img/page-top.png';
-import Footer from '../assets/img/page-bottom.png';
+import DesktopHeader from '../assets/img/page-top.png';
+import DesktopFooter from '../assets/img/page-bottom.png';
+import MobileHeader from '../assets/img/page-top-mobile.png';
+import MobileFooter from '../assets/img/page-bottom-mobile.png';
 import { Container, Row, Col } from 'react-bootstrap';
+import classNames from 'classnames';
 
-const Layout = ({ children }) => {
+const Layout = (props) => {
   return (
-    <Container className="container" fluid>
+    <Container className={`container-${props.layout}`} fluid>
       <Row>
         <Col>
           <div className="layout">
-            <div className="page-top-desktop">
-              <img src={Header} alt="Page top - desktop" />
+            <div className={`page-top--${props.layout}`}>
+              <img
+                className={`header-${props.layout}`}
+                src={props.layout === 'mobile' ? MobileHeader : DesktopHeader}
+                alt="Page top"
+              />
             </div>
-            <Row className="justify-content-md-center get-look--container">
-              <div className="get-look-border"></div>
-            </Row>
-              <div className="spring-casual">SPRING CASUAL</div>
-            {children}
+            {props.layout === 'desktop' && (
+              <Row className="justify-content-md-center get-look--container">
+                <div className="get-look-border"></div>
+              </Row>
+            )}
+            <div className="spring-casual">SPRING CASUAL</div>
+            {props.children}
             <div className="footer">
-              <img src={Footer} alt="Page bottom - desktop" />
+              <img
+                className={`footer-${props.layout}`}
+                src={props.layout === 'mobile' ? MobileFooter : DesktopFooter}
+                alt="Page bottom"
+              />
             </div>
           </div>
         </Col>
