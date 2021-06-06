@@ -5,25 +5,7 @@ import { store } from './store';
 import Mock1 from './pages/Mock1';
 import Mock2 from './pages/Mock2';
 import './assets/styles/index.css';
-import { ConnectedCardContainer } from './components/Card/CardContainer';
 
-// import SwiperTest from './components/Swiper/SlideContainer';
-
-// const App = () => {
-//   return (
-//     <Provider store={store}>
-//       <Container className="container" fluid>
-//         <Row>
-//           <Col>
-//             <PageTop />
-//             <ConnectedCardContainer />
-//             <PageBottom />
-//           </Col>
-//         </Row>
-//       </Container>
-//     </Provider>
-//   );
-// };
 
 const App = () => {
   return (
