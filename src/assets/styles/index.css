@@ -1,3 +1,16 @@
+.main-content {
+  width: 1220px;
+  margin-top: 59px!important;
+  padding: 0 2px 0 8px;
+  background: white;
+  display: block;
+}
+
+.container-mobile .main-content {
+  width: 456px;
+  padding: 0;
+}
+
 .navbar-nav {
   width: 400px;
   margin: 0 auto;
@@ -287,4 +300,8 @@ img.footer-mobile {
 
 .slick-dots li.slick-active button {
   background: rgba(170, 170, 170, 1) !important;
+}
+
+.container-mobile .product-row{
+  padding: 0 4px 0 8px;
 }
