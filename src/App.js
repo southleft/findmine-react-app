@@ -16,10 +16,10 @@ const App = () => {
             <Navbar.Brand href="#"><h5>FindMine Demo</h5></Navbar.Brand>
             <NavDropdown title="Change Viewport Size" id="basic-nav-dropdown">
               <NavDropdown.Item href="/">
-                Desktop (1204px wide)
+                Desktop
               </NavDropdown.Item>
               <NavDropdown.Item href="/mobile">
-                Mobile (436px wide)
+                Mobile
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
