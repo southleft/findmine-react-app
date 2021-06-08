@@ -24,48 +24,57 @@ const ProductRow = (props) => {
         <div className="product-group">
           <Row>
             <Col xs={props.layout === 'mobile' ? 6 : 3}>
-              <ProductGroup layout={props.layout} products={props.cardigans} />
+              <ProductGroup layout={props.layout} products={props.jackets1} />
             </Col>
             <Col xs={props.layout === 'mobile' ? 6 : 3}>
-              <ProductGroup layout={props.layout} products={props.blouses} />
+              <ProductGroup layout={props.layout} products={props.tops1} />
             </Col>
             <Col xs={props.layout === 'mobile' ? 6 : 3}>
-              <ProductGroup layout={props.layout} products={props.shoes} />
+              <ProductGroup layout={props.layout} products={props.footwear1} />
             </Col>
             <Col xs={props.layout === 'mobile' ? 6 : 3}>
-              <ProductGroup layout={props.layout} products={props.clutches} />
-            </Col>
-          </Row>
-        </div>
-        <div className="product-group">
-          <Row>
-            <Col xs={props.layout === 'mobile' ? 6 : 3}>
-              <ProductGroup layout={props.layout} products={props.totes} />
-            </Col>
-            <Col xs={props.layout === 'mobile' ? 6 : 3}>
-              <ProductGroup layout={props.layout} products={props.necklaces} />
-            </Col>
-            <Col xs={props.layout === 'mobile' ? 6 : 3}>
-              <ProductGroup layout={props.layout} products={props.watches} />
-            </Col>
-            <Col xs={props.layout === 'mobile' ? 6 : 3}>
-              <ProductGroup layout={props.layout} products={props.scarves} />
+              <ProductGroup
+                layout={props.layout}
+                products={props.accessories1}
+              />
             </Col>
           </Row>
         </div>
         <div className="product-group">
           <Row>
             <Col xs={props.layout === 'mobile' ? 6 : 3}>
-              <ProductGroup layout={props.layout} products={props.hats} />
+              <ProductGroup layout={props.layout} products={props.jackets2} />
             </Col>
             <Col xs={props.layout === 'mobile' ? 6 : 3}>
-              <ProductGroup layout={props.layout} products={props.sunglasses} />
+              <ProductGroup layout={props.layout} products={props.tops2} />
             </Col>
             <Col xs={props.layout === 'mobile' ? 6 : 3}>
-              <ProductGroup layout={props.layout} products={props.belts} />
+              <ProductGroup layout={props.layout} products={props.footwear2} />
             </Col>
             <Col xs={props.layout === 'mobile' ? 6 : 3}>
-              <ProductGroup layout={props.layout} products={props.beanies} />
+              <ProductGroup
+                layout={props.layout}
+                products={props.accessories2}
+              />
+            </Col>
+          </Row>
+        </div>
+        <div className="product-group">
+          <Row>
+            <Col xs={props.layout === 'mobile' ? 6 : 3}>
+              <ProductGroup layout={props.layout} products={props.jackets3} />
+            </Col>
+            <Col xs={props.layout === 'mobile' ? 6 : 3}>
+              <ProductGroup layout={props.layout} products={props.tops3} />
+            </Col>
+            <Col xs={props.layout === 'mobile' ? 6 : 3}>
+              <ProductGroup layout={props.layout} products={props.footwear3} />
+            </Col>
+            <Col xs={props.layout === 'mobile' ? 6 : 3}>
+              <ProductGroup
+                layout={props.layout}
+                products={props.accessories3}
+              />
             </Col>
           </Row>
         </div>
@@ -76,18 +85,18 @@ const ProductRow = (props) => {
 
 function mapStateToProps(state) {
   return {
-    blouses: state.blouses,
-    cardigans: state.cardigans,
-    clutches: state.clutches,
-    shoes: state.shoes,
-    totes: state.totes,
-    necklaces: state.necklaces,
-    watches: state.watches,
-    scarves: state.scarves,
-    hats: state.hats,
-    sunglasses: state.sunglasses,
-    belts: state.belts,
-    beanies: state.beanies,
+    tops1: state.tops1,
+    jackets1: state.jackets1,
+    accessories1: state.accessories1,
+    footwear1: state.footwear1,
+    jackets2: state.jackets2,
+    tops2: state.tops2,
+    footwear2: state.footwear2,
+    accessories2: state.accessories2,
+    jackets3: state.jackets3,
+    tops3: state.tops3,
+    footwear3: state.footwear3,
+    accessories3: state.accessories3,
   };
 }
 

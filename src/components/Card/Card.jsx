@@ -7,7 +7,8 @@ const Card = (props) => {
       key={props.sku}
       id={`card-${props.sku}`}
     >
-      <img src={`/assets/images/${props.image}`} alt={props.title} />
+      {/* <img src={`/assets/images/${props.image}`} alt={props.title} /> */}
+      <img src={props.image} alt={props.title} />
       <div className="card-text">
         <p className="card-title">{props.title}</p>
         <p className="card-sku">{props.sku}</p>
