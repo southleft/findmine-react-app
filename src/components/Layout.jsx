@@ -1,7 +1,7 @@
 import React from 'react';
-import DesktopHeader from '../assets/img/page-top.png';
+import DesktopHeader from '../assets/img/page-top2.png';
 import DesktopFooter from '../assets/img/page-bottom.png';
-import MobileHeader from '../assets/img/page-top-mobile.png';
+import MobileHeader from '../assets/img/page-top2-mobile.png';
 import MobileFooter from '../assets/img/page-bottom-mobile.png';
 import { Container, Row, Col } from 'react-bootstrap';
 
