@@ -24,7 +24,7 @@ const Layout = (props) => {
                   <div className="get-look-border"></div>
                 </Row>
               )}
-              <div className="spring-casual">SPRING CASUAL</div>
+              {/* <div className="spring-casual">SPRING CASUAL</div> */}
               {props.children}
               <div className="footer">
                 <img
